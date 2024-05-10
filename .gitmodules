@@ -1,0 +1,12 @@
+[submodule "SSH_Cloud_Agent"]
+	path = SSH_Cloud_Agent
+	url = https://github.com/jiechenmc/SSH_Cloud_Agent
+[submodule "Order-Fairness"]
+	path = Order-Fairness
+	url = https://github.com/jiechenmc/Order-Fairness.git
+[submodule "Pompe-HS"]
+	path = Pompe-HS
+	url = https://github.com/jiechenmc/Pompe-HS.git
+[submodule "narwhal-fino"]
+	path = narwhal-fino
+	url = https://github.com/jiechenmc/narwhal-fino.git
