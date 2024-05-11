@@ -278,7 +278,7 @@ rashnu_network = pd.DataFrame(
 
 # print(rashnu_network)
 
-ax = rashnu_network.plot.bar(figsize=(10, 10))
+ax = rashnu_network.plot.bar(figsize=(8, 6))
 ax.set_title("(1) Varying Network Size (Throughput)")
 ax.set_ylabel("Throughput (ops/s)")
 ax.set_xlabel("f = 1, 3, 5, 10")
@@ -314,7 +314,7 @@ rashnu_network_latency = pd.DataFrame(
     ],
 )
 
-ax = rashnu_network_latency.plot.line(figsize=(10, 10))
+ax = rashnu_network_latency.plot.line(figsize=(8, 6))
 ax.set_title("(1) Varying Network Size (Latency)")
 ax.set_ylabel("Latency (ms)")
 ax.set_xlabel("f = 1, 3, 5, 10")
@@ -560,7 +560,7 @@ replica_failure_df = pd.DataFrame(
     index=[1, 3, 5, 10],
 )
 
-ax = replica_failure_df.plot.line(figsize=(10, 10))
+ax = replica_failure_df.plot.line(figsize=(8, 6))
 ax.set_title("(2) Replica Failure (Throughput)")
 ax.set_ylabel("Throughput (op/s)")
 ax.set_xlabel("f = 1, 3, 5, 10")
@@ -610,7 +610,7 @@ replica_failure_latency_df = pd.DataFrame(
     index=[1, 3, 5, 10],
 )
 
-ax = replica_failure_latency_df.plot.line(figsize=(10, 10))
+ax = replica_failure_latency_df.plot.line(figsize=(8, 6))
 ax.set_title("(2) Replica Failure (Latency)")
 ax.set_ylabel("Latency (ms)")
 ax.set_xlabel("f = 1, 3, 5, 10")
@@ -946,7 +946,7 @@ blocksz_df = pd.DataFrame(
     index=[5, 25, 50, 100, 200, 400],
 )
 
-ax = blocksz_df.plot.bar(figsize=(10, 10))
+ax = blocksz_df.plot.bar(figsize=(8, 6))
 ax.set_title("(3) Block Size (Throughput)")
 ax.set_ylabel("Throughput (op/s)")
 ax.set_xlabel("block size = 5, 25, 50, 100, 200, 400")
@@ -984,7 +984,7 @@ blocksz_latency_df = pd.DataFrame(
     index=[5, 25, 50, 100, 200, 400],
 )
 
-ax = blocksz_latency_df.plot.line(figsize=(10, 10))
+ax = blocksz_latency_df.plot.line(figsize=(8, 6))
 ax.set_title("(3) Block Size (Latency)")
 ax.set_ylabel("Latency (ms)")
 ax.set_xlabel("block size = 5, 25, 50, 100, 200, 400")
@@ -1069,7 +1069,7 @@ geo_df = pd.DataFrame(
 )
 
 
-ax = geo_df.T.plot.bar(figsize=(10, 10))
+ax = geo_df.T.plot.bar(figsize=(8, 6))
 ax.set_title("(4) Geo Distributed (Throughput)")
 ax.set_ylabel("Throughput (op/s)")
 ax.set_xlabel("f = 1 ; γ = 1 ; n = 4 ; blocksz = 100")
@@ -1086,7 +1086,7 @@ geo_latency_df = pd.DataFrame(
     index=["Clemson", "Distributed"],
 )
 
-ax = geo_latency_df.T.plot.line(figsize=(10, 10))
+ax = geo_latency_df.T.plot.line(figsize=(8, 6))
 ax.set_title("(4) Geo Distributed (Latency)")
 ax.set_ylabel("Latency (ms)")
 ax.set_xlabel("f = 1 ; γ = 1 ; n = 4 ; blocksz = 100")
@@ -1236,7 +1236,7 @@ fairness_df = pd.DataFrame(
     index=[0.6, 0.75, 1],
 )
 
-ax = fairness_df.plot.bar(figsize=(10, 10))
+ax = fairness_df.plot.bar(figsize=(8, 6))
 ax.set_title("(5) Order Fairness Parameter (Throughput)")
 ax.set_ylabel("Throughput (op/s)")
 ax.set_xlabel(" γ = .60, .75 , 1")
@@ -1251,7 +1251,7 @@ fairness_latency_df = pd.DataFrame(
     index=[0.6, 0.75, 1],
 )
 
-ax = fairness_latency_df.plot.line(figsize=(10, 10))
+ax = fairness_latency_df.plot.line(figsize=(8, 6))
 ax.set_title("(5) Order Fairness Parameter (Latency)")
 ax.set_ylabel("Latency (ms)")
 ax.set_xlabel(" γ = .60, .75 , 1")
